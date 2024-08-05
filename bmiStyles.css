@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+      display: inline;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: rgb(97,138,254,0.9);
+      }
+
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    
+    .navbar {
+        background-color: #007bff;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .navbar a {
+        flex-grow: 1;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        font-weight: 600; /* Increase font weight for better readability */
+        letter-spacing: 1px; /* Add letter-spacing for improved spacing between characters */
+        text-transform: uppercase; /* Convert text to uppercase for uniformity */
+        font-size: 14px; /* Adjust font size for better readability */
+    }
+    
+    .navbar a:hover {
+        background-color: #0056b3;
+    }
+    
+    .navbar a.active {
+        background-color: #0056b3; /* Reduce opacity for active page */
+    }
+    
+    h1 {
+        color: #007bff;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    
+    li:hover {
+        background-color: #e0e0e0;
+    }
+    
+    li strong {
+        color: #007bff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    
+    .dropdown-content {
+        display: none;
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .dropdown-content.show {
+        display: block;
+    }
+    
+    .logout-button {
+        display: block;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .logout-button:hover {
+        background-color: #0056b3;
+    }
+    
+    a {
+        display: block;
+        text-align: right;
+        margin-bottom: 20px;
+        color: #007bff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+  .box {
+    width: 500px;
+    background: #fafafa;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+    justify-content: center;
+  }
+
+  h2 {
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+    
+  }
+
+
+    
+    .content {
+        padding: 0 30px;
+        
+    }
+    
+    .input {
+        background: #fff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    
+    .input label {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    .input input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #4f7df9;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+    }
+
+
+    
+    .inputW {
+        background: #fff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+
+    .inputW label {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 20px;
+    }
+   .inputW input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #4f7df9;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+    }
+
+    .inputH {
+        background: #fff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+
+
+    .inputH label {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 20px;
+    }
+   .inputH input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #4f7df9;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+    }
+
+  
+button.calculate {
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: rgb(97,138,254,1);
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+  }
+  button.calculate:hover {
+    background: #0044ff;
+  }
+
+  
+  
+.result {
+    padding: 10px 20px;
+  }
+  .result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+  }
+  #comment {
+    color: #4f7df9;
+    font-weight: 800;
+  }
+
+.comment {
+    display: none;
+    border: dashed 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+  /* Style for Radio */
+.gender .container2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .gender .container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .gender .container2:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .gender .container2 input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .gender .container2 input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .gender .container2 .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  /* END Style for Radio */
+
+.containerHW {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#app {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tracker {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tracker th, .tracker td {
+  padding: 10px;
+  text-align: left;
+}
+
+.tracker th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tracker__row--add {
+  background-color: #f9f9f9;
+}
+
+.tracker__date, .tracker_workout, .tracker__duration {
+  width: calc(100% - 20px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tracker_text {
+  margin-left: 5px;
+}
+
+.tracker__button {
+  padding: 5px 10px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tracker__button:hover {
+  background-color: #c82333;
+}
+
+.tracker__add {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.tracker__add:hover {
+  text-decoration: underline;
+}
+
+#calorieForm {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#calorieForm label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#calorieForm input[type="text"],
+#calorieForm select {
+  width: calc(100% - 12px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#calorieForm button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#calorieForm button:hover {
+  background-color: #0056b3;
+}
